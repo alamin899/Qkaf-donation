@@ -1,0 +1,448 @@
+@font-face {
+    font-family: Montserrat Regular;
+   src: url("fonts/Montserrat-Regular.otf");
+}
+
+body {
+  /* font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  overflow-x: hidden !important;
+  color: #333; */
+  margin:0px;
+}
+
+.header__top{
+
+height: 25px;
+line-height: 1.33333rem;
+background: #0A2A4C;
+font-family: 'Montserrat', sans-serif;
+z-index: 999;
+
+overflow: -moz-hidden-unscrollable;
+}
+.contact {
+  font-size:10.5px; color:#a8a8a8;
+  padding-right: 0px;
+}
+
+/* Next & previous buttons */
+.prev{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -45px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -45px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+
+}
+
+
+
+/* Slideshow container */
+.slideshowm-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prevm{
+  cursor: pointer;
+  position: absolute;
+  top: 74%;
+  width: auto;
+  padding: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+
+}
+
+.nextm {
+  cursor: pointer;
+  position: absolute;
+  top: 74%;
+  width: auto;
+  padding: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+
+}
+
+/* Position the "next button" to the right */
+.nextm {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prevm:hover, .nextm:hover {
+
+} */
+
+/* Caption text */
+.textm {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 4px 40px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  line-height: 14px;
+  }
+
+/* Number text (1/3 etc) */
+.numbertextm {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dotm {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activem, .dotm:hover {
+  background-color: #ffffff;
+}
+
+
+
+/*End Mobile Slide Css */
+
+.title-ribbon {
+
+position: absolute;
+padding-right: 13px;
+margin: -5px 19px 0 -20px;
+height: 31px;
+background-color: #0A2A4C;
+background-image: -webkit-linear-gradient(left,#0A2A4C,#184872);
+background-image: -moz-linear-gradient(left,#0A2A4C,#184872);
+background-image: -o-linear-gradient(left,#0A2A4C,#184872);
+background-image: -ms-linear-gradient(left,#0A2A4C,#184872);
+background-image: linear-gradient(left,#0A2A4C,#184872);
+-webkit-transform: skew(-20deg);
+-moz-transform: skew(-20deg);
+-ms-transform: skew(-20deg);
+-o-transform: skew(-20deg);
+transform: skew(-20deg);
+z-index: 4;
+}
+
+.title-ribbon::after{
+content: " ";
+position: absolute;
+top: 100%;
+left: 4px;
+width: 11px;
+height: 22px;
+background: url(../images/icon022.png) no-repeat bottom left;
+-webkit-transform: skew(20deg);
+-moz-transform: skew(20deg);
+-ms-transform: skew(20deg);
+-o-transform: skew(20deg);
+transform: skew(20deg);
+}
+.title-ribbon h2.title {
+display: block;
+margin: 0;
+padding: 6px 8px 7px 19px;
+min-width: 80px;
+color: #fff;
+font-size: 12px;
+line-height: 18px;
+font-weight: 700;
+text-transform: none;
+-webkit-transform: skew(20deg);
+-moz-transform: skew(20deg);
+-ms-transform: skew(20deg);
+-o-transform: skew(20deg);
+transform: skew(20deg);
+}
+.tab__link--icon {
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+border-radius: 60px;
+height: 70px;
+margin-bottom: 6px;
+padding: 5px;
+width: 70px;
+border: 2px solid #d1ccbd;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+
+}
+.tab__label {
+font-size: 15px;
+line-height: 12px;
+margin-top: 10px;
+margin-bottom: 7px;
+text-align: center;
+
+}
+.title-ribbondocumentary {
+position: absolute;
+padding-right: 13px;
+margin: -5px 19px 0 -4px;
+height: 31px;
+background-color: #0A2A4C;
+background-image: -webkit-linear-gradient(left,#0A2A4C,#184872);
+background-image: -moz-linear-gradient(left,#0A2A4C,#184872);
+background-image: -o-linear-gradient(left,#0A2A4C,#184872);
+background-image: -ms-linear-gradient(left,#0A2A4C,#184872);
+background-image: linear-gradient(left,#0A2A4C,#184872);
+-webkit-transform: skew(-20deg);
+-moz-transform: skew(-20deg);
+-ms-transform: skew(-20deg);
+-o-transform: skew(-20deg);
+transform: skew(-20deg);
+z-index: 4;
+
+}
+
+.title-ribbondocumentary::after{
+content: " ";
+position: absolute;
+top: 100%;
+left: 4px;
+width: 11px;
+height: 22px;
+background: url(../images/icon022.png) no-repeat bottom left;
+-webkit-transform: skew(20deg);
+-moz-transform: skew(20deg);
+-ms-transform: skew(20deg);
+-o-transform: skew(20deg);
+transform: skew(20deg);
+}
+.title-ribbondocumentary h2.title {
+display: block;
+margin: 0;
+padding: 6px 8px 7px 19px;
+min-width: 80px;
+color: #fff;
+font-size: 12px;
+line-height: 18px;
+font-weight: 700;
+text-transform: none;
+-webkit-transform: skew(20deg);
+-moz-transform: skew(20deg);
+-ms-transform: skew(20deg);
+-o-transform: skew(20deg);
+transform: skew(20deg);
+}
+
+
+
+
+
+
+
+.tabs{
+    width:100%;
+    height:auto;
+    margin:0 auto;
+}
+
+/* tab list item */
+.tabs .tabs-list{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+.tabs .tabs-list li{
+    width:100px;
+    float:left;
+    margin:0px;
+    margin-right:2px;
+    padding:10px 5px;
+    text-align: center;
+    background-color:cornflowerblue;
+    border-radius:3px;
+}
+.tabs .tabs-list li:hover{
+    cursor:pointer;
+}
+.tabs .tabs-list li a{
+    text-decoration: none;
+    color:white;
+}
+
+/* Tab content section */
+.tabs .tab{
+    display:none;
+    width:96%;
+    min-height:250px;
+    height:auto;
+    border-radius:3px;
+    padding:20px 15px;
+    background-color:lavender;
+    color:darkslategray;
+    clear:both;
+}
+.tabs .tab h3{
+    border-bottom:3px solid cornflowerblue;
+    letter-spacing:1px;
+    font-weight:normal;
+    padding:5px;
+}
+.tabs .tab p{
+    line-height:20px;
+    letter-spacing: 1px;
+}
+
+/* When active state */
+/* .active{
+    display:block !important;
+} */
+.tabs .tabs-list li.active{
+    background-color:lavender !important;
+    color:black !important;
+}
+.active a{
+    color:black !important;
+}
+
+/* media query */
+@media screen and (max-width:360px){
+    .tabs{
+        margin:0;
+        width:96%;
+    }
+    .tabs .tabs-list li{
+        width:80px;
+    }
+}
+
+.ytp-chrome-controls {
+  display: none !important;
+}
+.qkaf {
+
+  font-family: 'Microsoft YaHei', sans-serif !important;
+font-weight: normal !important;
+font-size: 24px;
+color: #fff;
+}
+
+
+
+.topmenu {
+  float: left;
+  overflow: hidden;
+}
+
+.topmenu .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #000000;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  width: 100% !important;
+}
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #000000;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  width: 100% !important;
+}
+.navbar a:hover, .topmenu:hover .dropbtn {
+  background-color: none;
+}
+
+.topmenu-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.topmenu-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topmenu-content a:hover {
+  background-color: #ddd;
+}
+
+.topmenu:hover .topmenu-content {
+  display: block;
+}
+.missionvision {
+background: url(../images/Mission-&-Vision.png) no-repeat bottom left;
+height: auto; }
+.mission {
+  background: url(../images/about_1.png) no-repeat bottom left;
+  height: 270px;
+}
+.vision {
+  background: url(../images/about_2.png) no-repeat bottom left;
+  height: 270px;
+}
+
+.executivecommittee {
+background: url(../images/texture.jpg) repeat ;
+height: auto; }

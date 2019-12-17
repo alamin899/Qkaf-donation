@@ -1,0 +1,167 @@
+/* left body_part */
+
+.left_body{
+    height: 500px;
+    overflow: scroll;
+}
+
+
+
+
+
+
+
+/* donation type */
+
+.chose_donate_type{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: #DFDFDF;
+
+  }
+
+  .chose_donate_type input{
+    display: none;
+  }
+  .chose_donate_type label span{
+
+      font-size: 15px;
+      margin-left: 5px;
+      padding:5px;
+      margin-left: 10px;
+
+  }
+  .active{
+    background-color: #136849;
+    color: white;
+  }
+  .donate_box{
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.donate_box label{
+    cursor: pointer;
+}
+
+.donate_box label span{
+    display: inline-block;
+    /* margin: 20px 10px; */
+    background: #DFDFDF;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding:5px;
+    width: 60px;
+    margin-left: 10px;
+
+}
+
+.donate_box input[type="radio"]{
+    display: none;
+
+}
+
+.input_field{
+    display: none;
+}
+
+.donate_box label input:checked ~ span{
+    color:#fff;
+    border: 1px solid #136849;
+}
+
+.donate_box label input:checked ~ span:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #136849;
+    z-index: -1;
+}
+
+.donate_box label input:checked ~ span:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #FBF7F2;
+    z-index: -1;
+
+}
+.donate_box label input:checked ~ span.donate_amount{
+    border-color: #136849;
+}
+
+.donate_box label input:checked ~ span.donate_amount:before,
+.donate_box label input:checked ~ span.donate_amount:after{
+    background:#136849;
+}
+.donate_type{
+    margin-top: 45px;
+  }
+.monthly-content{
+    display: none;
+}
+
+/* #donate_amount_other{
+    margin-right: 23rem;
+} */
+
+
+
+/* end donation type */
+
+
+
+
+
+/* Payment Type */
+
+
+
+/* Right Body Part */
+.right_up_body{
+    height: 330px;
+    overflow: scroll;
+}
+
+.prduct_image{
+    border: 1px solid white;
+    background-color: #C5C5C5;
+    border-radius: 5px;
+    font-size: 10px;
+}
+.product_quantity{
+    font-size: 10px;
+}
+
+.needed_product{
+    margin-left: 5rem;
+}
+
+#cart_button{
+    border: 1px solid white;
+    background-color: #C5C5C5;
+    height: 60px;
+    width: 65px;
+
+}
+
+
+/* Right_bottom_part */
+
+.right_bottom_part{
+    height: 150px;
+}

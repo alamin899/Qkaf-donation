@@ -1,0 +1,56 @@
+/* header section */
+
+
+.header{
+    background-color:#0A2A4C; !important;
+    /* line-height: 1.33333rem; */
+    font-family: 'Montserrat', sans-serif;
+    /* z-index: 999; */
+    color: white;
+    margin: 0 auto;
+    height: 26px;
+    font-size: 10px;
+}
+.header ul li {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+	color:white;
+	/* font-size:10px; */
+
+}
+.header ul li a {
+	color:white;
+    text-decoration:none;
+}
+.contact{
+    margin-left: 10px;
+}
+.contact-no{
+    margin-left: 10px;
+}
+
+.contact-info{
+    display: inline-flex;
+    margin-left: 10px;
+
+}
+.user{
+    display: inline-flex;
+    margin:0 auto;
+
+}
+.userlogin{
+    display: inline-flex;
+
+}
+.loguser{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.icon{
+    margin-top:5px;
+}
+.space{
+    margin:0px;
+}

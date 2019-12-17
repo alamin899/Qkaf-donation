@@ -1,0 +1,612 @@
+/* <!-- Login Css --> */
+.logintab {
+  width: 50%;
+  margin: 0px auto;
+  margin-bottom: 0px;
+  padding: 50px;
+  }
+  
+  a:hover {
+      color: green;
+  }
+  
+  #tab-btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .login,.register{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    background-color: #fff6;
+    text-align: center;
+    color: #000;
+    font-size: 25px;
+    padding: 10px;
+  }
+  
+  /* .active{
+    background-color: #ffffff;
+    color: #000000;
+  } */
+  
+  .content,.other {
+      width: 100%;
+      background-color: #fff6;
+      /* background-color: #eee; */
+      padding: 20px 30px 30px 30px;
+      /* box-shadow: 2px 2px 5px #333; */
+  }
+  
+  .other {
+      display: none;
+  }
+  
+  .inp {
+      width: 100%;
+      /* padding: 12px; */
+      margin-bottom: 20px;
+      font-size: 20px;
+      /* border: 2px solid #888; */
+          /* border-radius:50px; */
+      /* border-bottom: 5px solid #888; */
+      background-color: #fff;
+      color: #666;
+  }
+  
+  .inp:focus{
+      outline: none;
+      /* border: 2px solid #555; */
+      /* border-bottom: 5px solid #555; */
+      border-radius: 5px;
+  }
+  
+  .extra{
+      width: 10%;
+      padding: 12px;
+      margin-bottom: 20px;
+      font-size: 20px;
+      border: 2px solid #888;
+      /* border-radius:50px; */
+      /* border-bottom: 5px solid #888; */
+      background-color: #fff;
+      color: #0A2A4C;
+  }
+  #sub-btn{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color:#136849;
+    color:#fff;
+    cursor:pointer;
+    border-bottom: 5px solid #444;
+  }
+  #sub-btn:focus{
+    outline: none;
+  }
+  /* #sub-btn:active{
+    border: none;
+    margin-top: 5px;
+  } */
+  #forgot{
+    font-size: 20px;
+    color: #444;
+    display: block;
+  }
+  h2{
+    text-align: center;
+    padding-bottom: 15px;
+    color: #333;
+    font-size: 30px;
+    font-variant: small-caps;
+  }
+
+
+ /* End Login  */
+.Header_top{
+  height: auto;
+  background: #0A2A4C;
+  z-index: 999;
+}
+.logsec{
+  font-size: 14.5px; 
+  color: #fff; 
+  padding-left: 0px; 
+  text-align: right;
+}
+
+.dropbtn {
+  background-color: #FFF;
+  color: #000;
+  margin-top: 15px;
+  font-size: 15px;
+  border: none;
+  }
+  
+.dropdown {
+  position: relative;
+  display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: black;
+    padding: 10px 5px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #ddd;}
+
+  .nav_menu{
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .nav_menu a{
+    color:  black !important;
+  }
+  .topnav .icon {
+    display: none;
+  }
+
+  hr{
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  /*  bottom heaser  */
+
+/* Donation Body */
+.chose_donate_type{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: inline-block;
+  width: 100%;
+  justify-content: center;
+  /* margin-bottom: 15px; */
+  padding: 10px;
+  color: #000;
+  margin-left: 25%;
+}
+
+.chose_donate_type input{
+  display: none;
+}
+.chose_donate_type label span{
+    font-size: 15px;
+    margin-left: 5px;
+    padding:5px;
+    margin-left: 10px;
+    border: 1px solid black;
+
+}
+
+.donate_box label{
+  cursor: pointer;
+}
+
+.donate_box label span{
+  display: inline-block;
+  background: #a6a6a6;
+  color: white;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 180px;
+  margin-left: 10px;
+  text-align: center;
+  padding: 10px 70px 10px 35px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.otherinput{
+  font-size: 20px; 
+  padding: 7px 5px 7px 5px; 
+  margin-left: 10px;
+  width: 180px;
+  border: 1px solid grey;
+}
+
+.donate_box input[type="radio"]{
+  display: none;
+}
+
+.input_field{
+  display: none;
+}
+
+.donate_box label input:checked ~ span{
+  color:#fff;
+  border: 1px solid #136849;
+  background-color: red;
+}
+
+.donate_box label input:checked ~ span:before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #136849;
+  z-index: -1;
+}
+
+.donate_box label input:checked ~ span:after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #FBF7F2;
+  z-index: -1;
+
+}
+.donate_box label input:checked ~ span.donate_amount{
+  border-color: #136849;
+}
+
+.donate_box label input:checked ~ span.donate_amount:before,
+.donate_box label input:checked ~ span.donate_amount:after{
+  background:#136849;
+}
+.donate_type{
+  margin-top: 45px;
+}
+.monthly-content{
+  display: none;
+}
+
+
+.tab {
+  height: 500px;
+  background-color:rgba(255, 255, 255, 0.8);
+}
+
+/* Style the buttons inside the tab */
+.tab a {
+  display: block;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+  height: 167px;
+
+}
+
+/* Change background color of buttons on hover */
+.tab a:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab a.active {
+  background-color: #ccc;
+  border-right: 10px solid red;
+}
+
+/* Style the tab content */
+.tabcontent {
+  padding: 0px 0px;
+  height:500px;
+}
+
+.tablinks_center{
+  padding-top: 25%;
+}
+
+.tab a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
+.chose_amount_position {
+  padding-top: 17%;
+}
+.gift_type{
+  margin-left:160px
+}
+.gift_type_label {
+    margin-left:80px
+}
+
+.currency_icon{
+  margin-right: 5px;
+  margin-top: -3px;
+}
+
+.avoid-clicks {
+  pointer-events: none;
+}
+
+.total_amount_{
+  float: right;
+  position: absolute;
+  bottom: 20px;
+  left: 20%;
+}
+
+.Total_amount_input{
+  margin-left: 10px;
+  margin-top: -7px;
+  border: none;
+  background-color:rgba(255, 255, 255, 0.1);
+}
+
+.Process{
+  float: right;
+  position: absolute;
+  bottom: 10px;
+  right: 60px;
+}
+.refresh{
+  border-radius: 0px;
+  padding: 10px 30px 10px 30px;
+}
+
+.proccedtoinfo_{
+  border-radius: 0px;
+  padding: 10px 30px 10px 30px;
+}
+.terms_conditions p {
+  text-decoration: underline;
+}
+.card_height{
+  min-height: 350px;
+}
+
+.footer{
+  padding-top:23px;
+  padding-bottom:23px
+}
+
+.top_footer{
+  color:#ffffff; 
+  padding-left: 0px;
+}
+
+.bottom_footer{
+  color:#ffffff; 
+  font-size: 12px;
+  padding-left:0px; 
+  padding-right: 0px; 
+  text-align: right;
+}
+.Username {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0px;
+}
+
+.User_dropdown{
+  z-index: 10000;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .Contact  {
+    display: none;
+  }
+  
+  .Follow  {
+    display: none;
+  }
+  
+  .english  {
+    display: none;
+  }
+  
+  .divider {
+    display: none;
+  }
+
+  .maintain_img{
+    display: none;
+  }
+
+  .logsec{
+    background: #0A2A4C;
+    width: 30%;
+    text-align: center;
+    padding-top: 2px;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    position: absolute;
+    right: 5%;
+    top: 0px;
+    height: 30px;
+    border-radius: 15px;
+    padding-right: 2%;
+  }
+  .Username {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0px;
+  }
+  .User_dropdown{
+    z-index: 10000;
+  }
+  .logo{
+    margin-top: 35px;
+    margin-left: 70%;
+  }
+  .donate{
+      position: absolute;
+      top: 0px;
+      left:  0px;
+      border-radius: 15px;
+      background-color: #da291c;
+      font-size: 16px;
+      height: 30px;
+      margin-top: 1.5%;
+      margin-left: 1.5%;
+      padding-top: 3px;
+      text-align: center;
+      color: #fff;
+      width: 35%;
+  }
+  .menu_button {
+    float: right;
+    margin-top: -50px; 
+    margin-right: 5%;
+  }
+  .donation_a {
+    height: auto!important;
+  }
+  .tabcontent {
+    padding: 0px 0px;
+    height: auto;
+  }
+  .tab {
+    height: auto;
+  } 
+  .tab a {
+      width: 32.5%;
+      display: inline-block;
+      color: inherit;
+      text-decoration: none;
+      height: auto;
+      display: inline-block;
+      }
+  .tablinks_center{
+  padding-top: 10px;
+  }
+  .tablinks_center img{
+      height: 30px;
+      width: 30px;
+  }
+
+  .tablinks_center p{
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0px;
+  }
+  hr {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      display: none;
+  }
+  .tab a.active {
+      background-color: #ccc;
+      border-bottom: 10px solid red;
+      border-right: none;
+      }
+    .tab_section{
+      padding: 0px;
+      /* margin: 15px 5px; */
+    }
+    .otherinput {
+      font-size: 20px;
+      padding: 9px 5px 9px 5px;
+      margin-left: 10px;
+      width: 80px;
+      border: 1px solid grey;
+      border-radius: 5px;
+    }
+    .donate_box label span{
+      display: inline-block;
+      background: #a6a6a6;
+      color: white;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      width: 80px;
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .currency_icon{
+      margin-top: 0px;
+      margin-right: 5px;
+      height: 10px;
+      width: 10px;
+    }
+    .gift_type{
+      margin-left:10px;
+    }
+    .gift_type_label{
+        margin: 15px;
+    }
+    .chose_amount_position{
+      padding-top: 0px;
+    }
+    .chose_amount_row{
+        padding:0px;
+    }
+    .donate_type{
+      padding: 0px;
+      margin-top: 15px;
+      margin-bottom: 1.5rem;
+    }
+    .Total_amount_input{
+      width: 50%;
+      margin-left: 10px;
+    }
+    .total_amount_{
+      /* margin: 0px; */
+      padding: 0px;
+      margin-left: 15%;
+    }
+    .Process {
+        right: 10px;
+    }
+    .chose_amount{
+        position: static !important;
+        min-height: 10px;
+    }
+      .proccedtoinfo_{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .refresh {
+        padding: 10px;
+        font-size: 15px;
+    }
+  
+
+  }
