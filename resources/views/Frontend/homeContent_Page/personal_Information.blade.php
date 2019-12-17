@@ -143,19 +143,15 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 mb-1">
+                <div class="col-md-4 mb-1 passwordcheck">
                     <label for="password">{{ __('Password') }}</label>
-                    <input id="password" type="password" class="form-control" name="password" required autocomplete="new-password">
-                    <div class="invalid-feedback">
-                        Please enter your Password.
-                    </div>
+                    <input id="register_password" type="password" class="form-control passwordchecker" name="password" required >
+                    <span id="error_password"></span>
                 </div>
-                <div class="col-md-4 mb-1">
+                <div class="col-md-4 mb-1 confirmcheck">
                     <label for="password-confirm">{{ __('Confirm Password') }}</label>
-                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                    <div class="invalid-feedback">
-                        Please enter your Password.
-                    </div>
+                    <input id="password-confirm" type="password" class="form-control confirmchecker" name="password_confirmation" required >
+                    <span id="error_confirmpassword"></span>
                 </div>
             </div>
             <div class="mt-4" style="float: right;padding-right: 70px;position:absolute;right:0px;bottom:10px">
@@ -201,6 +197,42 @@
     {{--<button class="btn btn-secondary" type="submit" style="border-radius: 0px; padding: 10px 30px 10px 30px;" onClick="back_to_donate()">Back</button>--}}
     {{--<button class="btn btn-primary"  type="submit" style="border-radius: 0px; padding: 10px 30px 10px 30px;" onClick="next2()">Logins & Procced</button>--}}
 </div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.passwordcheck').delegate('.passwordchecker', 'keyup', function () {
+
+            var password = $(this).val();
+            console.log(password);
+            if (password.length < 8) {
+                $('#error_password').html('<label class="text-danger">Password Must be Atleast 8 character</label>');
+                $('#registarsubmit').attr('disabled', true);
+            }
+            else {
+                $('#error_password').css({"display": "none"});
+                $('#registarsubmit').attr('disabled', false);
+
+            }
+        });
+
+        $('.confirmcheck').delegate('.confirmchecker','keyup',function(){
+
+            var passwords=document.getElementById("register_password").value;
+            var confirmpassword=$(this).val();
+
+
+            if (passwords==confirmpassword){
+                $('#error_confirmpassword').css({"display":"none"});
+                $('#registarsubmit').attr('disabled', false);
+            }
+            else {
+                $('#error_confirmpassword').html('<label class="text-danger">Password Does Not Match</label>');
+                $('#registarsubmit').attr('disabled', true);
+
+            }
+        });
+    });
+
+</script>
 <script>
     $(function () {
         $("#registrationuser").on("submit",function (e) {
@@ -323,3 +355,5 @@
         });
     });
     </script>
+
+
