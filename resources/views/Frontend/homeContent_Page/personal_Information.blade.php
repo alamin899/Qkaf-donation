@@ -289,7 +289,7 @@
                 $('#error_email').html('<label class="text-danger">Invalid Email</label>');
                 console.log("vbn");
                 // $('#email').addClass('has-error');
-                 $('.crtbtn').attr('disabled', 'disabled');
+                 $('#registarsubmit').attr('disabled', true);
             }
             else
             {
@@ -306,13 +306,13 @@
                         {
                             $('#error_email').html('<label class="text-success">Email Available</label>');
                             // $('#email').removeClass('has-error');
-                            // $('#register').attr('disabled', false);
+                            $('#registarsubmit').attr('disabled', false);
                         }
                         else
                         {
                             $('#error_email').html('<label class="text-danger">Email not Available</label>');
                             // $('#email').addClass('has-error');
-                            // $('#register').attr('disabled', 'disabled');
+                            $('#registarsubmit').attr('disabled', true);
                         }
                     },
                     error:function () {
