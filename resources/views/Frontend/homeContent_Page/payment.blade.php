@@ -104,7 +104,7 @@
             token="if you have any token validation"
             postdata="your javascript arrays or objects which requires in backend"
             order="If you already have the transaction generated for current order"
-            endpoint="checkout_ajax.php">Pay now</button>
+            endpoint="www.google.com">Pay now</button>
 </div>
 <script type="text/javascript">
     function totalvalue(){

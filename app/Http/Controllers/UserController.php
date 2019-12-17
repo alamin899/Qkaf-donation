@@ -23,11 +23,11 @@ class UserController extends Controller
         $users->frist_name = $request->fristname;
         $users->last_name = $request->lastname;
         $users->email = $request->email;
-        $users->country = $request->dropdowncountry;
+        $users->country = $request->dropdowncountry ?:"";
         $users->address = $request->address;
-        $users->city = $request->city;
-        $users->state = $request->state;
-        $users->postal_code =$request->zip;
+        $users->city = $request->city ?:"";
+        $users->state = $request->state ?:"";
+        $users->postal_code =$request->zip ?:"";
         $users->Phone = $request->phone;
         $users->password = Hash::make($request->password);
         $insert=$users->save();

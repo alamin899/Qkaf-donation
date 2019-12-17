@@ -78,7 +78,7 @@
                 </div>
                 <div class="col-md-4 mb-1 emailcheck">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control emailchecker" id="email " name="email" placeholder="you@example.com">
+                    <input type="email" class="form-control emailchecker" id="email " name="email" placeholder="you@example.com" autocomplete="current-password" required>
                     <span id="error_email"></span>
                     <!--@error('email')-->
                     <!--    <div class="invalid-feedback">-->
@@ -103,7 +103,7 @@
                 </div>
                 <div class="col-md-4 mb-1">
                     <label for="state">State</label>
-                    <select class="state custom-select d-block w-100" id="state" name="state" onchange="stateSelect()" required>
+                    <select class="state custom-select d-block w-100" id="state" name="state" onchange="stateSelect()">
                     <option value="">Choose...</option>
                     <option>California</option>
                     </select>
@@ -113,7 +113,7 @@
                 </div>
                 <div class="col-md-4 mb-1">
                     <label for="city">city</label>
-                    <select class="city form-control" id="city" name="city"  required>
+                    <select class="city form-control" id="city" name="city">
                         <option value="city">Choose...</option>
                         <option>California</option>
                     </select>
@@ -129,7 +129,7 @@
                 </div>
                 <div class="col-md-4 mb-1">
                     <label for="zip">Zip</label>
-                    <input type="text" class="form-control" id="zip" name ="zip" placeholder="" required>
+                    <input type="text" class="form-control" id="zip" name ="zip" placeholder="">
                     <div class="invalid-feedback">
                     Zip code required.
                     </div>

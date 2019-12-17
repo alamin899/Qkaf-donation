@@ -30,6 +30,6 @@
     </div>
     <div class="Process">
         <button class="refresh btn btn-secondary" id="refresh" type="submit" onClick="refreshPage()">Refresh</button>
-        <button class="proccedtoinfo_ btn btn-primary" id="proccedtoinfo"  type="submit" onClick="next()">Procced</button>
+        <button class="proccedtoinfo_ btn btn-primary" id="proccedtoinfo"  disabled type="submit" onClick="next()">Procced</button>
     </div>
 </div>
