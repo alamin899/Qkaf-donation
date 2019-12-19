@@ -286,8 +286,9 @@
                 $('.crtbtn').attr('disabled', true);
             }
             else {
-                $('#error_password').css({"display":"none"});
+                // $('#error_password').css({"display":"none"});
                 $('.crtbtn').attr('disabled', false);
+                $('#error_password').html('');
 
             }
         });
@@ -300,8 +301,9 @@
 
 
             if (passwords==confirmpassword){
-                $('#error_confirmpassword').css({"display":"none"});
+                // $('#error_confirmpassword').css({"display":"none"});
                 $('.crtbtn').attr('disabled', false);
+                $('#error_confirmpassword').html('');
             }
             else {
                 $('#error_confirmpassword').html('<label class="text-danger">Password Does Not Match</label>');

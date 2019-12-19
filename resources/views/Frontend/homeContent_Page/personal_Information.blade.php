@@ -208,8 +208,10 @@
                 $('#registarsubmit').attr('disabled', true);
             }
             else {
-                $('#error_password').css({"display": "none"});
+                // $('#error_password').css({"display": "none"});
+                $('#error_password').html('');
                 $('#registarsubmit').attr('disabled', false);
+
 
             }
         });
@@ -221,7 +223,7 @@
 
 
             if (passwords==confirmpassword){
-                $('#error_confirmpassword').css({"display":"none"});
+                $('#error_confirmpassword').html('');
                 $('#registarsubmit').attr('disabled', false);
             }
             else {

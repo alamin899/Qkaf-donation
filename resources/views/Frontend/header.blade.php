@@ -1,14 +1,14 @@
 <div class="Header_top">
     <div class="container">
         <div class="row">
-            <div class="col-sm-5 hidden-sm hidden-xs Contact" style="background-color:;">
+            <div class="col-sm-5 hidden-sm hidden-xs Contact" style="background-color:">
                 <div class="row">
                     <div class="col-md-3 contact" style="padding-left: 0px;" > CONTACT US: </div>
                     <div class="col-md-4" style="font-size: 14.5px; color: #fff; padding-left: 0px; padding-right: 0px;"> <span class="fa fa-phone"> +88 017 1406 3350 </span> </div>
                     <div class="col-md-4" style="padding-left: 0px; font-size: 14.5px; color: #fff;"> <span class="fa fa-envelope"> contact@qkaf.org </span></div>
                 </div>
             </div>
-            <div class="col-sm-4 hidden-sm hidden-xs Follow" style="background-color:;">
+            <div class="col-sm-4 hidden-sm hidden-xs Follow" style="">
                 <div class="row">
                     <div class="col-md-4 contact" > FOLLOW US: </div>
                     <div class="col-md-2" style="font-size: 14.5px; color: #fff; padding-right: 0px; width: 5%;"> <a style="color:#ffffff;" href="https://www.facebook.com/QKAFoundation/" target="_blank"> <span class="fa fa-facebook"></span> </a> </div>
@@ -29,7 +29,7 @@
                     @guest                          
                     <div class="col-md-4 logsec">
                         <span class="fa fa-user"> </span>
-                        <a href="/customlog"  style="color:#ffffff">LOGIN</a>
+                        <a href="{{url('/customlog')}}"  style="color:#ffffff">LOGIN</a>
                     </div>                
                     @else
                         <div class="logsec" id="username" onclick="Toggle_menu()">
@@ -101,7 +101,7 @@
                 </div>
             </div>
             <div class="col-md-2 donate" style="border-radius: 20px; background-color: #da291c; font-size: 16px; height: 30px; margin-top: 1.5%; padding-top: 3px; text-align: center; color: #fff;">
-                <a style="color:#ffffff;" href="application/index.php">
+                <a style="color:#ffffff;" href="{{url('/')}}">
                     <span class="fa fa-heart" style="font-size:16px;"></span>  Donate Now
                 </a> 
             </div>

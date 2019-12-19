@@ -15,6 +15,9 @@ use App\Country;
 /*
 cache clear
 */
+    
+
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/test', function () {
     return view('Frontend.testhome');
