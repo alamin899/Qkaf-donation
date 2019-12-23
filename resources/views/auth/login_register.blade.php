@@ -127,8 +127,6 @@
                     <label for="country" class="col-md-4 col-form-label text-md-right">{{ __('Country') }}</label>
 
                     <div class="col-md-6">
-                        {{-- <input id="country" type="text" class="inp{{ $errors->has('country') ? ' is-invalid' : '' }}" name="country" value="{{ old('country') }}" required autofocus> --}}
-
                         @if ($errors->has('country'))
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $errors->first('country') }}</strong>
@@ -145,7 +143,7 @@
                     <label for="state" class="col-md-4 col-form-label text-md-right">{{ __('State') }}</label>
 
                     <div class="col-md-6">
-                        {{-- <input id="state" type="text" class="inp{{ $errors->has('state') ? ' is-invalid' : '' }}" name="state" value="{{ old('state') }}" required autofocus> --}}
+                        
                         <select class="state custom-select d-block w-100" id="state" name="state" onchange="stateSelect()" required>
                             <option value="">Choose...</option>
                             <option>California</option>

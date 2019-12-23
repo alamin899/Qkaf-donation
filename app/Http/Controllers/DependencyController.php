@@ -21,10 +21,24 @@ class DependencyController extends Controller
 {
 
     public function dependencyIndex(){
+        if (Auth::check()) {
+            $countryname = Country::all();
+            $user=Auth::User();
+            $country=Country::select('name','id')->where('id',Auth::User()->country)->first();
+            $state=State::select('name','id')->where('id',Auth::User()->state)->first();
+            $city=City::select('name','id')->where('id',Auth::User()->city)->first();
+            return view('Frontend.homeContent',compact('countryname','user','country','state','city'));
+        }
+        else{
+            
+            
+     
+
         $user=  Auth::user();
         $countryname = Country::all();
 
         return view('Frontend.homeContent',compact('countryname','user'));
+        }
     }
 
     public function getcategory(Request $request){

@@ -165,6 +165,7 @@
     </div>
     @else
         <b>Your Information</b>
+        
         <div class="col-md-12 row">
             <div class="col-md-6 userinfo">
             <p>Frist-Name:</p>
@@ -178,11 +179,11 @@
             </div>
             <div class="col-md-6 useraddres">
                 <h2>User Address</h2>
-                <p>Country: {{ $user->country }}</p>
-                <p>State: {{ $user->state }}</p>
-                <p>City: {{ $user->city }}</p>
+                <p>Country: {{ $country->name }}</p>
+                <p>State: {{ $state->name }}</p>
+                <p>City: {{ $city->name }}</p>
                 <p>Address: {{ $user->address }}</p>
-                <p>Address: {{ $user->postal_code }}</p>
+                <p>Postal-Code: {{ $user->postal_code }}</p>
             </div>
         </div>
 
